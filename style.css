@@ -85,7 +85,7 @@ nav ul li a:hover::after{
 }
 .about-col-1 img{
     width: 400px;
-    height: 90vh;
+    height: 80vh;
     border-radius: 15px;
 }
 
@@ -139,4 +139,68 @@ nav ul li a:hover::after{
 }
 .tab-contents.active-tab{
     display: block;
+}
+
+
+nav .fa-solid{
+    display: none;
+}
+
+/*----------------CSS for responsive---------*/
+
+@media only screen and (max-width:600px){
+    #header{
+        background-image: url("image/background.png");
+        background-size: cover; /* Adjust as needed */
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+    .header-text{
+        margin-top: 100%;
+        font-size: 14px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    .header-text h1 span1{
+        font-size: 20px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.8s;
+    }
+    nav ul li{
+        display: block;
+        margin: 20px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    /*about section*/
+    .about-col-1 img{
+        width: 300px;
+        height: 60vh;
+        border-radius: 15px;
+    }
+    .sub-title{
+        padding-top: 20px;
+        font-size:40px;
+        font-weight: 600;
+        color: white;
+    }
 }
