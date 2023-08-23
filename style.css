@@ -72,7 +72,7 @@ nav ul li a:hover::after{
 /*---------------------about------------------------*/
 
 #about{
-    padding:50px 0;
+    padding:30px 0;
     color: #ababab;
 }
 .row{
@@ -141,10 +141,61 @@ nav ul li a:hover::after{
     display: block;
 }
 
-
 nav .fa-solid{
     display: none;
 }
+/*-----------------------------------interests page------------------------------*/
+.interests{
+    margin-left:15% ;
+    margin-right: 20%;
+    margin-bottom: 5%;
+}
+.title{
+    line-height: 2.5cm;
+    font-size: 20px;
+}
+.icon-box {
+    background-color: black;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 280px; /* 33.33% width for each box */
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 20px;
+    display: inline-block;
+    vertical-align: top;
+    transition: transform 0.3s;
+}
+.icon-box:hover {
+    background-color: black; /* Change background color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    -ms-transform: scale(0.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+}
+
+.icon-box i {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.icon-box i span {
+    margin-left: 10px;
+}
+
+.container-1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+
+
+
+
+
 
 /*----------------CSS for responsive---------*/
 
@@ -155,7 +206,7 @@ nav .fa-solid{
         background-repeat: no-repeat;
         background-position: center center;
     }
-    
+
     .header-text{
         margin-top: 100%;
         font-size: 14px;
@@ -164,7 +215,7 @@ nav .fa-solid{
         font-size: 30px;
     }
     .header-text h1 span1{
-        font-size: 20px;
+        font-size: 20px;    
     }
     nav .fa-solid{
         display: block;
@@ -198,9 +249,20 @@ nav .fa-solid{
         border-radius: 15px;
     }
     .sub-title{
-        padding-top: 20px;
-        font-size:40px;
-        font-weight: 600;
-        color: white;
+       font-size:40px;
+    }
+    .about-col-1,.about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+        align-content: justify;
+    }
+    .container-1{
+        grid-template-columns: repeat(1, 1fr);
+
     }
 }
