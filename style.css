@@ -161,7 +161,7 @@ nav ul li a:hover::after{
 
 #about{
     color: #ababab;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .row{
     display: flex;
