@@ -1,12 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif ;
+    font-family: 'Open Sans', sans-serif;
 }
 html{
     scroll-behavior: smooth;
 }
 body{
+
     background-color:#080808;
     color : #fff;
 }
@@ -57,9 +59,53 @@ nav ul li a:hover::after{
 }
 .header-text{
     margin-left: 10%;
-    margin-top: 20%;
+    margin-top: 15%;
     font-size: 20px;   
 }
+.header-text p{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    font-size: 28px;
+}
+.wisteria {
+    color: #8e44ad;
+  }
+  
+  .belize {
+    color: #2980b9;
+  }
+  
+  .pomegranate {
+    color: #c0392b;
+  }
+  
+.word {
+    position: absolute;
+    width: 220px;
+    opacity: 0;
+}
+.letter {
+    display: inline-block;
+    position: relative;
+    float: left;
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+}
+.letter.out {
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+    transform: rotateX(-90deg);
+}
+
+.letter.in {
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
 .header-text h1 {
     font-size: 60px;
     margin-top: 20px;
@@ -70,7 +116,47 @@ nav ul li a:hover::after{
 .header-text h1 span1{
     font-size: 45px;
 }
+.icons{
+    margin-top: 20px;
+}
+.icons a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50%; /* Make the icons circular */
+    width: 50px; /* Set the width of the circular border */
+    height: 50px; /* Set the height of the circular border */
+    line-height: 50px; /* Vertically center the icon within the circle */
+    text-align: center;
+    border: 2px solid white; 
+    transition: transform 0.3s ease;  
+}
 
+.icons a:hover{
+    transform: scale(1.5); 
+}
+
+.icons a i {
+    font-size: 30px; /* Adjust the icon size */
+}
+.ri-instagram-line{
+    color: #E1306C;
+    #0077B5
+}
+.ri-linkedin-line{
+    color:#0077B5 ;
+}
+.icons a[href^="mailto:"] {
+    color: #FFD700; /* Add background color to email icon */
+}
+
+.ri-whatsapp-line{
+    color: #25D366;
+}
+.ri-phone-line{
+    color: #00ff62;
+}
 /*---------------------about------------------------*/
 
 #about{
@@ -261,6 +347,26 @@ nav .fa-solid{
         left: 25px;
         cursor: pointer;
     }
+    .icons{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Arrange icons in 4 columns */
+        gap: 1px; /* Add spacing between icons */
+        justify-items: start ; /* Center icons horizontally within columns */
+        margin-top: 50px; /* Add spacing between text and icons */
+        margin-right:   110%; /* Negative margin to reduce the gap on the right */
+        padding-right: 10px; 
+        margin-left: 0px;
+    }
+    .icons a{
+        width: 30px; /* Set the width of the circular border */
+        height: 30px; /* Set the height of the circular border */
+        line-height: 30px; 
+    }
+    .icons a i {
+        font-size: 20px; /* Adjust the icon size */
+        align-items: center;
+    }
+
     /*about section*/
     .about-col-1{
         display: flex;
