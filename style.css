@@ -68,6 +68,9 @@ nav ul li a:hover::after{
     margin: 0;
     font-size: 28px;
 }
+.intro p{
+    font-size: 36px;
+}
 .wisteria {
     color: #8e44ad;
   }
@@ -88,7 +91,6 @@ nav ul li a:hover::after{
 .letter {
     display: inline-block;
     position: relative;
-    float: left;
     transform: translateZ(25px);
     transform-origin: 50% 50% 25px;
 }
@@ -142,7 +144,6 @@ nav ul li a:hover::after{
 }
 .ri-instagram-line{
     color: #E1306C;
-    #0077B5
 }
 .ri-linkedin-line{
     color:#0077B5 ;
@@ -161,7 +162,7 @@ nav ul li a:hover::after{
 
 #about{
     color: #ababab;
-    margin-top: 5%;
+    margin-top:5%;
 }
 .row{
     display: flex;
@@ -281,7 +282,7 @@ nav .fa-solid{
     width: 100%;
     height: 4px;
     border-radius: 4px;
-    background-color: #e90000;
+    background-color: #b54769;
     bottom: -8px;
     left: 0;
     transform-origin: right;
@@ -302,6 +303,228 @@ nav .fa-solid{
   gap: 10px;
 }
 
+/*------------------skills---------------*/
+.skills{
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+.col-1-1,.col-1-2{
+    color: black;
+    background-color: white;
+    width: 70%;
+    padding: 20px;
+    margin-bottom: 3%;
+}
+.col-1-1 h4,.col-1-2 h4{
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+.col-1-1 img,.col-1-2 img{
+    margin-right: 10px;
+}
+/*----- certifications----*/
+.certificates{
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.container-4 {
+  background-color: transparent;
+  width: 500px;
+  height: 400px;
+  perspective: 1000px;
+  margin-bottom: 2%;
+}
+
+.inside {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.back h1{
+    margin-top: 15%;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10%;
+    font-weight: bold;
+    color: #b54769;
+}
+.inside p{
+    text-align: justify;
+}
+.container-4:hover .inside {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-color: #bbb;
+  color: black;
+}
+.front img{
+    width:500px;
+    height:400px;
+}
+.back {
+  background-color: #000000;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+/*----------------contact me----------------- */
+.contact{
+    padding: 0;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 0px 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(image/bg.jpg);
+    background-size: cover;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.box .icon .phone{
+    color: #000000;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+    border-left: 0;
+    border-radius: 9px;
+    font-style: italic;
+    font-variant: small-caps;
+    font-family: cursive;
+    margin-bottom: 5%;
+}
+.contact .content p{
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    opacity: 0.75;
+    margin-top: 0;
+}
+.container-5{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container-5 .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container-5 .contactinfo .box{
+    position: relative;
+    padding: 10px 5px;
+    display: flex;
+    margin-bottom: 2%;
+}
+.container-5 .contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #000000;
+}
+.container-5 .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container-5 .contactinfo .box .text h3 {
+    font-weight: 500;
+    color: #b54769;
+}
+text{
+    display:inline-block;
+}
+.contactform{
+    width: 40%;
+    padding:40px;
+    background: #fff;
+}
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input,.contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox span{
+    color: #000000;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5%;
+    color:#666 ;
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span{
+    color: #E91E63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactform .inputbox input[type="submit"]{
+    width: 100px;
+    background: #E91E63;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
 /*----------------CSS for responsive---------*/
 
 @media only screen and (max-width:600px){
@@ -313,7 +536,7 @@ nav .fa-solid{
         margin-top: 0;
     }
     .header-text{
-        margin-top: 60%;
+        margin-top: 110%;
         font-size: 16px;
     }
     .header-text h1{
@@ -399,5 +622,28 @@ nav .fa-solid{
     }
     .icon-box{
         align-items: center;
+    }
+    .col-1-1 h4,.col-1-2 h4{
+        font-size: 16px;
+    }
+    .front img{
+        width:350px;
+        height:300px;
+    }
+    .container-4 {
+        width: 350px;
+        height: 300px;
+    }
+    .contact{
+        padding: 50px;
+    }
+    .container-5{
+        flex-direction: column;
+    }
+    .container-5 .contactinfo{
+        margin-bottom: 40px;
+    }
+    .container-5 .contactinfo,.contactform   {
+        width: 100%;
     }
 }
