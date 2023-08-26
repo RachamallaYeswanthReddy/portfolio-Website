@@ -413,7 +413,6 @@ nav .fa-solid{
     border-radius: 9px;
     font-style: italic;
     font-variant: small-caps;
-    font-family: cursive;
     margin-bottom: 5%;
 }
 .contact .content p{
@@ -464,6 +463,10 @@ nav .fa-solid{
 .container-5 .contactinfo .box .text h3 {
     font-weight: 500;
     color: #b54769;
+}
+.container-5 .contactinfo .box .text p {
+    text-decoration: none;
+    color: #fff;
 }
 text{
     display:inline-block;
