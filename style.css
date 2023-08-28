@@ -413,7 +413,6 @@ nav .fa-solid{
     border-radius: 9px;
     font-style: italic;
     font-variant: small-caps;
-    font-family: cursive;
     margin-bottom: 5%;
 }
 .contact .content p{
@@ -669,5 +668,9 @@ text{
     .container-5 .contactinfo .box .text p {
         text-decoration: none;
         color: #fff;
+    }
+    .contactinfo{
+        padding:8% ;
+        margin-left:-1.9rem !important;
     }  
 }
