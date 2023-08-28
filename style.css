@@ -413,6 +413,7 @@ nav .fa-solid{
     border-radius: 9px;
     font-style: italic;
     font-variant: small-caps;
+    font-family: cursive;
     margin-bottom: 5%;
 }
 .contact .content p{
@@ -623,12 +624,14 @@ text{
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
     }
+    /*skills*/
     .icon-box{
         align-items: center;
     }
     .col-1-1 h4,.col-1-2 h4{
         font-size: 16px;
     }
+    /*certifications */
     .front img{
         width:350px;
         height:300px;
@@ -637,6 +640,11 @@ text{
         width: 350px;
         height: 300px;
     }
+    .certificates{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    /*contact me*/
     .contact{
         padding: 50px;
     }
@@ -648,5 +656,15 @@ text{
     }
     .container-5 .contactinfo,.contactform   {
         width: 100%;
+    }
+    .container-5 .contactinfo .box .text p {
+        text-decoration: none;
+        color: #fff;
+    }    
+    .back p{
+        font-size: 16px;
+    }
+    .inside p{
+        text-align: left;
     }
 }
