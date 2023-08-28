@@ -641,8 +641,7 @@ text{
         height: 300px;
     }
     .certificates{
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 0;
     }
     /*contact me*/
     .contact{
