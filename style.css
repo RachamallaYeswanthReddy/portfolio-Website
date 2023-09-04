@@ -173,6 +173,7 @@ nav ul li a:hover::after{
     flex-basis: 35%;
 }
 .about-col-1 img{
+    margin-top:10%;
     margin-left: 10%;
     max-width: 90%;
     max-height: 90%;
