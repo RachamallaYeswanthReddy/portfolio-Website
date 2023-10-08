@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    user-select: none;
 }
 html{
     scroll-behavior: smooth;
@@ -322,7 +323,7 @@ nav .fa-solid{
     font-size: 26px;
 }
 .col-1-1 img,.col-1-2 img{
-    margin-right: 10px;
+    margin-right: 2%;
 }
 /*----- certifications----*/
 .certificates{
