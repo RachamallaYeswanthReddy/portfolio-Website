@@ -170,6 +170,7 @@ nav ul li a:hover::after{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .about-col-1{
     flex-basis: 35%;
 }
@@ -182,6 +183,13 @@ nav ul li a:hover::after{
 }
 .about-col-2{
     flex-basis: 60%;
+}
+.about-col-2 h1{
+    margin-top: 5%;
+    font-size: 40px;
+}
+.about-col-2 h1 span{
+    color: #ff004f;
 }
 .sub-title{
     font-size:60px;
@@ -325,6 +333,11 @@ nav .fa-solid{
 .col-1-1 img,.col-1-2 img{
     margin-right: 2%;
 }
+
+.col-1-2 h4 span{
+    color: #ff004f;
+}
+
 /*----- certifications----*/
 .certificates{
     margin-top: 3%;
@@ -609,6 +622,11 @@ text{
     }
     .sub-title{
        font-size:40px;
+    }
+    .about-col-2 h1{
+        margin-top: 5%;
+        font-size: 25px;
+        text-align: center;
     }
     .about-col-1,.about-col-2{
         flex-basis: 100%;
