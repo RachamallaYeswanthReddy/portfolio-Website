@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,44 +10,57 @@
     <link rel="icon" type="image/x-icon" href="image\code-logo.png">
     <title>Yeswanth Reddy | Porfolio</title>
 </head>
+
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="image/logo.png" alt="Yesh" class="logo"  draggable="false">
+                <img src="image/logo.png" alt="Yesh" class="logo">
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#main-skills">Skills</a></li>
                     <li><a href="#certificates">Certifications</a></li>
                     <li><a href="Yeswanth Reddy Rachamalla.pdf">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars " onclick="openmenu()"></i>
             </nav>
         </div>
-        <div class="header-text">
-            <div class="intro">
-                <p><span1>A</span1></p>
-                <p>
-                    <span class="word wisteria">Pythonist</span>
-                    <span class="word belize">Devolper</span>
-                    <span class="word pomegranate">FastLearner</span>
-                </p>
-                <h1>Hi, I'm <span>Yeswanth Reddy</span> <br><span1>A Computer Science Student</span1></h1>
+        <div class="header-container">
+            <div class="header-text">
+                <div class="intro">
+                    <p>
+                        <span1>A</span1>
+                    </p>
+                    <p>
+                        <span class="word wisteria">Pythonist</span>
+                        <span class="word belize">Devolper</span>
+                        <span class="word pomegranate">FastLearner</span>
+                    </p>
+                    <h1>Hi, I'm <span>Yeswanth Reddy</span> <br>
+                        <span1>A Computer Science Student</span1>
+                    </h1>
+                </div>
+                <div class="icons">
+                    <a href="https://www.instagram.com/__y_e_s_w_a_n_t_h_r_e_d_d_y__/"><i class="ri-instagram-line"
+                            draggable="false"></i></a>
+                    <a href="https://www.linkedin.com/in/yeswanth-reddy-rachamalla/"><i class="ri-linkedin-line"
+                            draggable="false"></i></a>
+                    <a href="mailto:yeswanthrachamalla@gmail.com"><i class="ri-mail-line" draggable="false"></i></a>
+                    <a href="https://github.com/RachamallaYeswanthReddy"><i class="ri-github-fill"
+                            draggable="false"></i></a>
+                    <a href="http://wa.me/917981875023"><i class="ri-whatsapp-line" draggable="false"></i></a>
+                    <a href="tel:+917981875023"><i class="ri-phone-line" draggable="false"></i></a>
+                </div>
             </div>
-            <div class="icons">
-                <a href="https://www.instagram.com/__y_e_s_w_a_n_t_h_r_e_d_d_y__/" ><i class="ri-instagram-line" draggable="false"></i></a>
-                <a href="https://www.linkedin.com/in/yeswanth-reddy-rachamalla/"><i class="ri-linkedin-line" draggable="false"></i></a>
-                <a href="mailto:yeswanthrachamalla@gmail.com"><i class="ri-mail-line" draggable="false"></i></a>
-                <a href="https://github.com/RachamallaYeswanthReddy"><i class="ri-github-fill" draggable="false"></i></a>
-                <a href="http://wa.me/917981875023"><i class="ri-whatsapp-line" draggable="false"></i></a>
-                <a href="tel:+917981875023"><i class="ri-phone-line" draggable="false"></i></a>
+            <div class="image">
+                <img src="image\pic.png" alt="PIC" style="   width: 100%;height: 100%;">
             </div>
         </div>
     </div>
-<!------------------About ------------------>
+    <!------------------About ------------------>
     <div id="about">
         <div class="container">
             <div class="row">
@@ -55,31 +69,39 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">LET ME <span>INTRODUCE</span> MYSELF</h1><br>
-                    <p class="text">Hey, This is Yeswanth Reddy , I am Pre-Final year Computer Science and Engineer 
-                        currently pursuing my BTech in Vellore institute of Technology, Chennai. Committed 
-                        and goal-oriented computer science graduate looking to pursue a career in the software 
-                        engineering domain. Possess excellent knowledge in Python, OOPS(C++), HTML, CSS, Javascript. 
-                        Ability to learn things quickly and capable of working in a fast-paced and team-driven environment.
-                        Moveover I like to travel. I believe travelling gives you a new perspective to everything. You get to
-                        know a lot about the different cultures, the cuisines, their history, the language and all the small 
+                    <p class="text">Hey, This is Yeswanth Reddy , I am Pre-Final year Computer Science and Engineer
+                        currently pursuing my BTech in Vellore institute of Technology, Chennai. Committed
+                        and goal-oriented computer science graduate looking to pursue a career in the software
+                        engineering domain. Possess excellent knowledge in Python, OOPS(C++), HTML, CSS, Javascript.
+                        Ability to learn things quickly and capable of working in a fast-paced and team-driven
+                        environment.
+                        Moveover I like to travel. I believe travelling gives you a new perspective to everything. You
+                        get to
+                        know a lot about the different cultures, the cuisines, their history, the language and all the
+                        small
                         unique things every place has to offer.</p>
-                        
-                     <div class="tab-titles">
+
+                    <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Machine Learning Expertise</span><br>Skilled in diverse machine learning algorithms: regression, clustering, classification.</li>
-                            <li><span>UI/UX Designing</span><br>Experienced in UI/UX design, creating engaging digital experiences.</li>
-                            <li><span>Web Applications</span><br>Skilled in crafting functional and user-friendly web applications.</li>
+                            <li><span>Machine Learning Expertise</span><br>Skilled in diverse machine learning
+                                algorithms: regression, clustering, classification.</li>
+                            <li><span>UI/UX Designing</span><br>Experienced in UI/UX design, creating engaging digital
+                                experiences.</li>
+                            <li><span>Web Applications</span><br>Skilled in crafting functional and user-friendly web
+                                applications.</li>
                             <li><span>Cloud Applications</span><br>Basic Understanding in Azure Cloud Platforms</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2021-Present</span><br>Under Graduate at Vellore Institute of Technology,Chennai</li>
-                            <li><span>2019-2021</span><br>Secondary Education at Sri Chaitanya Educational Institutions,Vijayawada</li>
+                            <li><span>2021-Present</span><br>Under Graduate at Vellore Institute of Technology,Chennai
+                            </li>
+                            <li><span>2019-2021</span><br>Secondary Education at Sri Chaitanya Educational
+                                Institutions,Vijayawada</li>
                             <li><span>2017-2019</span><br>Schooling at Indus Montessori School, Kurnool</li>
                         </ul>
                     </div>
@@ -98,7 +120,7 @@
             <div class="col-1">
                 <div class="icon-box">
                     <i class="ri-code-s-slash-line"><span>Software Development</span></i>
-                    </div>                  
+                </div>
             </div>
             <div class="col-2">
                 <div class="icon-box">
@@ -113,7 +135,7 @@
             <div class="col-4">
                 <div class="icon-box">
                     <i class="ri-computer-line"><span>Data Science</span></i>
-                    
+
                 </div>
             </div>
             <div class="col-5">
@@ -139,61 +161,61 @@
         </div>
     </div>
 
-<!--Skills page-->
-    
-<div class="skills" id="main-skills">
-    <!--Skills Section-->
-    <div class="container-3">
-        <div class="title">
-            <h1><a href="#">My Skills</a></h1>
-        </div>
-        <div class="row">
-            <div class="col-1-1">
-                <h4>Programming Languages</h4>
-                <p>
-                    <img src="image\skills\python.png" height="60" width="120" draggable="false">
-                    <img src="image\skills\c++.png" height="80" width="80" draggable="false">
-                    <img src="image\skills\java.png" height="80" width="90" draggable="false">
-                    <img src="image\skills\html.jpg" height="80" width="70" draggable="false">
-                    <img src="image\skills\css.jpg" height="80" width="70" draggable="false">
-                    <img src="image\skills\js.jpg" height="80" width="70" draggable="false">
-                </p>
+    <!--Skills page-->
+
+    <div class="skills" id="main-skills">
+        <!--Skills Section-->
+        <div class="container-3">
+            <div class="title">
+                <h1><a href="#">My Skills</a></h1>
             </div>
-            <div class="col-1-2">
-                <h4>Backend/DevOps </h4>
-                <p>
-                    <img src="image\skills\spring.png" height="60" width="140" draggable="false">
-                    <img src="image\skills\restapi.png" height="80" width="80" draggable="false">
-                    <img src="image\skills\postman.png" height="80" width="80" draggable="false">
-                    <img src="image\skills\mysql.jpg" height="60" width="120" draggable="false">
-                    <img src="image\skills\azure.png" height="60" width="140" draggable="false">
-                </p>
-            </div>
-            <div class="col-1-2">
-                <h4>Libraries</h4>
-                <p>
-                    <img src="image\skills\matlab.png" height="80" width="80" draggable="false">
-                    <img src="image\skills\Netlify.png" height="80" width="140" draggable="false">
-                    <img src="image\skills\linux.jpg" height="80" width="120" draggable="false">
-                    <img src="image\skills\numpy.jpg" height="80" width="120" draggable="false">
-                    <img src="image\skills\pandas.png" height="80" width="120" draggable="false">
-                </p>
-            </div>
-            <div class="col-1-2">
-                <h4><span>Tools</span> I use</h4>
-                <p>
-                    <img src="image\skills\windows.png" height="60" width="60" draggable="false">
-                    <img src="image\skills\vscode.jpg" height="60" width="60" draggable="false">
-                    <img src="image\skills\postman.png" height="60" width="60" draggable="false">
-                    <img src="image\skills\intellij.png" height="60" width="60" draggable="false">
-                    <img src="image\skills\jupiter.png" height="60" width="60" draggable="false">
-                    <img src="image\skills\Dbeaver.png" height="60" width="60" draggable="false">
-                </p>
+            <div class="row">
+                <div class="col-1-1">
+                    <h4>Programming Languages</h4>
+                    <p>
+                        <img src="image\skills\python.png" height="60" width="120" draggable="false">
+                        <img src="image\skills\c++.png" height="80" width="80" draggable="false">
+                        <img src="image\skills\java.png" height="80" width="90" draggable="false">
+                        <img src="image\skills\html.jpg" height="80" width="70" draggable="false">
+                        <img src="image\skills\css.jpg" height="80" width="70" draggable="false">
+                        <img src="image\skills\js.jpg" height="80" width="70" draggable="false">
+                    </p>
+                </div>
+                <div class="col-1-2">
+                    <h4>Backend/DevOps </h4>
+                    <p>
+                        <img src="image\skills\spring.png" height="60" width="140" draggable="false">
+                        <img src="image\skills\restapi.png" height="80" width="80" draggable="false">
+                        <img src="image\skills\postman.png" height="80" width="80" draggable="false">
+                        <img src="image\skills\mysql.jpg" height="60" width="120" draggable="false">
+                        <img src="image\skills\azure.png" height="60" width="140" draggable="false">
+                    </p>
+                </div>
+                <div class="col-1-2">
+                    <h4>Libraries</h4>
+                    <p>
+                        <img src="image\skills\matlab.png" height="80" width="80" draggable="false">
+                        <img src="image\skills\Netlify.png" height="80" width="140" draggable="false">
+                        <img src="image\skills\linux.jpg" height="80" width="120" draggable="false">
+                        <img src="image\skills\numpy.jpg" height="80" width="120" draggable="false">
+                        <img src="image\skills\pandas.png" height="80" width="120" draggable="false">
+                    </p>
+                </div>
+                <div class="col-1-2">
+                    <h4><span>Tools</span> I use</h4>
+                    <p>
+                        <img src="image\skills\windows.png" height="60" width="60" draggable="false">
+                        <img src="image\skills\vscode.jpg" height="60" width="60" draggable="false">
+                        <img src="image\skills\postman.png" height="60" width="60" draggable="false">
+                        <img src="image\skills\intellij.png" height="60" width="60" draggable="false">
+                        <img src="image\skills\jupiter.png" height="60" width="60" draggable="false">
+                        <img src="image\skills\Dbeaver.png" height="60" width="60" draggable="false">
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!---------------------------Certifications Page----------------------->
+    <!---------------------------Certifications Page----------------------->
 
     <div class="certificates" id="certificates">
         <div class="title">
@@ -208,10 +230,11 @@
                     <div class="back" draggable="false">
                         <h1>Azure Fundamentals<br>(AZ-900)</h1>
                         <p>
-                            Entry-level certification providing foundational understanding of cloud concepts, Azure services, pricing models, and security fundamentals. 
-                            Ideal for beginners in cloud computing. Covers IaaS, PaaS, SaaS, deployment models. 
+                            Entry-level certification providing foundational understanding of cloud concepts, Azure
+                            services, pricing models, and security fundamentals.
+                            Ideal for beginners in cloud computing. Covers IaaS, PaaS, SaaS, deployment models.
                             Demonstrates knowledge of core services like virtual machines, Azure Storage, and databases.
-                            Beneficial for business stakeholders and technical professionals exploring cloud solutions. 
+                            Beneficial for business stakeholders and technical professionals exploring cloud solutions.
                         </p>
                     </div>
                 </div>
@@ -223,11 +246,13 @@
                     </div>
                     <div class="back" draggable="false">
                         <h1>University of Michigan <br> Python DS Course</h1>
-                        <p>Completed esteemed online course on Python data structures. 
-                            Gained comprehensive knowledge of lists, dictionaries, recursion, and more. 
-                            Applied concepts to real-world coding projects, honing skills in data manipulation and algorithmic problem-solving. 
-                            Benefited from University of Michigan's renowned instructional quality. 
-                            Certificate signifies mastery of Python data structures and ability to create efficient, organized code.
+                        <p>Completed esteemed online course on Python data structures.
+                            Gained comprehensive knowledge of lists, dictionaries, recursion, and more.
+                            Applied concepts to real-world coding projects, honing skills in data manipulation and
+                            algorithmic problem-solving.
+                            Benefited from University of Michigan's renowned instructional quality.
+                            Certificate signifies mastery of Python data structures and ability to create efficient,
+                            organized code.
                         </p>
                     </div>
                 </div>
@@ -239,11 +264,12 @@
                     </div>
                     <div class="back" draggable="false">
                         <h1>HackerRank Certificate<br> Problem Solving Basics</h1>
-                        <p>Earned by mastering Python problem-solving on HackerRank. 
-                            Strengthened algorithmic thinking, coding skills, and logical reasoning. 
-                            Tackled diverse coding challenges, enhancing proficiency in writing efficient code. 
-                            Demonstrated ability to solve real-world coding problems using Python. 
-                            Valuable recognition of practical coding expertise and analytical problem-solving capabilities.
+                        <p>Earned by mastering Python problem-solving on HackerRank.
+                            Strengthened algorithmic thinking, coding skills, and logical reasoning.
+                            Tackled diverse coding challenges, enhancing proficiency in writing efficient code.
+                            Demonstrated ability to solve real-world coding problems using Python.
+                            Valuable recognition of practical coding expertise and analytical problem-solving
+                            capabilities.
                         </p>
                     </div>
                 </div>
@@ -257,9 +283,10 @@
                         <h1>HackerRank Certificate <br>Python Basics</h1>
                         <p>Achieved by excelling in Python problem-solving on HackerRank.
                             Enhanced algorithmic thinking, coding prowess, and logical reasoning.
-                            Successfully tackled diverse coding challenges, honing efficiency in crafting optimized code. 
-                            Displayed proficiency in solving real-world coding problems using Python. 
-                            Certificate signifies practical coding expertise and analytical problem-solving skills. 
+                            Successfully tackled diverse coding challenges, honing efficiency in crafting optimized
+                            code.
+                            Displayed proficiency in solving real-world coding problems using Python.
+                            Certificate signifies practical coding expertise and analytical problem-solving skills.
                             Valuable recognition for adeptness in translating concepts into functional solutions.
                         </p>
                     </div>
@@ -272,11 +299,12 @@
                     </div>
                     <div class="back" draggable="false">
                         <h1>Certification Of Completion <br> C Training IIT Bombay</h1>
-                        <p>Successfully Completed comprehensive online course on C programming. 
-                            Acquired proficiency in fundamental concepts, data types, control structures, and functions. 
-                            Developed skills to design and implement C programs. 
-                            Engaged in hands-on coding projects, enhancing problem-solving abilities.  
-                            Benefitted from esteemed IIT Bombay's instructional expertise. Explored practical applications and real-world programming challenges. 
+                        <p>Successfully Completed comprehensive online course on C programming.
+                            Acquired proficiency in fundamental concepts, data types, control structures, and functions.
+                            Developed skills to design and implement C programs.
+                            Engaged in hands-on coding projects, enhancing problem-solving abilities.
+                            Benefitted from esteemed IIT Bombay's instructional expertise. Explored practical
+                            applications and real-world programming challenges.
                             Certificate signifies solid understanding of C language essentials and coding competence.
                         </p>
                     </div>
@@ -289,156 +317,157 @@
                     </div>
                     <div class="back" draggable="false">
                         <h1>Certification Of Completion <br> Python Training IIT Bombay</h1>
-                        <p>Successfully completed comprehensive online course on Python programming. 
-                            Gained expertise in Python syntax, data structures, and object-oriented programming. 
+                        <p>Successfully completed comprehensive online course on Python programming.
+                            Gained expertise in Python syntax, data structures, and object-oriented programming.
                             Explored practical applications, including web scraping and data visualization.
-                            Engaged in hands-on projects, honing coding skills and problem-solving abilities. 
-                            Benefited from esteemed IIT Bombay's instructional excellence. 
-                            Certificate signifies solid grasp of Python fundamentals and proficiency in creating functional applications.
+                            Engaged in hands-on projects, honing coding skills and problem-solving abilities.
+                            Benefited from esteemed IIT Bombay's instructional excellence.
+                            Certificate signifies solid grasp of Python fundamentals and proficiency in creating
+                            functional applications.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<!--Contact page-->
+    <!--Contact page-->
 
-<section class="contact" id="contact">
-    <div class="content">
-        <h2>Send me a Message!</h2>
-        <p>Feel free to transmit your thoughts </p>
-        <p>Let's create something extraordinary together!</p>
-    </div>
-    <div class="container-5">
-        <div class="contactinfo">
-            <div class="box">
-                <div class="icon"><i class="ri-map-pin-line"></i></div>
-                <div class="text">
-                    <h3>Address</h3>
-                    <p>Ashok Nagar,<br>Anantapur,<br>AndhraPradesh.<br>515001</p>
+    <section class="contact" id="contact">
+        <div class="content">
+            <h2>Send me a Message!</h2>
+            <p>Feel free to transmit your thoughts </p>
+            <p>Let's create something extraordinary together!</p>
+        </div>
+        <div class="container-5">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon"><i class="ri-map-pin-line"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Ashok Nagar,<br>Anantapur,<br>AndhraPradesh.<br>515001</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="ri-phone-line phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+91 79818 75023</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="ri-mail-line"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>yeswanthrachamalla@gmail.com</p>
+                    </div>
                 </div>
             </div>
-            <div class="box">
-                <div class="icon"><i class="ri-phone-line phone"></i></div>
-                <div class="text">
-                    <h3>Phone</h3>
-                    <p>+91 79818 75023</p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="icon"><i class="ri-mail-line"></i></div>
-                <div class="text">
-                    <h3>Email</h3>
-                    <p>yeswanthrachamalla@gmail.com</p>
-                </div>
+            <div class="contactform">
+                <form action="">
+                    <h2>Send Message</h2>
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea type="text" name="" required="required"></textarea>
+                        <span>Type your Message....</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" name="" required="required" value="Send">
+                    </div>
+                </form>
             </div>
         </div>
-        <div class="contactform">
-            <form action="">
-                <h2>Send Message</h2>
-                <div class="inputbox">
-                    <input type="text" name="" required="required">
-                    <span>Full Name</span>
-                </div>
-                <div class="inputbox">
-                    <input type="text" name="" required="required">
-                    <span>Email</span>
-                </div>
-                <div class="inputbox">
-                    <textarea type="text" name="" required="required"></textarea>
-                    <span>Type your Message....</span>
-                </div>
-                <div class="inputbox">
-                    <input type="submit" name="" required="required" value="Send">
-                </div>
-            </form>
-        </div>
-    </div>
-</section>  
+    </section>
 
 
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname)
-    {
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
         }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-
-<script>
-    
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-300px";
-    }
-
-</script>
-<script>
-    var words = document.getElementsByClassName('word');
-    var wordArray = [];
-    var currentWord = 0;
-
-    words[currentWord].style.opacity = 1;
-    for (var i = 0; i < words.length; i++) {
-        splitLetters(words[i]);
-    }
-
-    function changeWord() {
-        var cw = wordArray[currentWord];
-        var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
-        for (var i = 0; i < cw.length; i++) {
-            animateLetterOut(cw, i);
-    }
-
-    for (var i = 0; i < nw.length; i++) {
-        nw[i].className = 'letter behind';
-        nw[0].parentElement.style.opacity = 1;
-        animateLetterIn(nw, i);
-    }
-
-    currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
-    }
-
-    function animateLetterOut(cw, i) {
-        setTimeout(function() {
-            cw[i].className = 'letter out';
-        }, i*80);
-    }
-
-    function animateLetterIn(nw, i) {
-        setTimeout(function() {
-            nw[i].className = 'letter in';
-        }, 340+(i*80));
-    }
-
-    function splitLetters(word) {
-        var content = word.innerHTML;
-        word.innerHTML = '';
-        var letters = [];
-        for (var i = 0; i < content.length; i++) {
-            var letter = document.createElement('span');
-            letter.className = 'letter';
-            letter.innerHTML = content.charAt(i);
-            word.appendChild(letter);
-            letters.push(letter);
+        function closemenu() {
+            sidemenu.style.right = "-300px";
         }
-        wordArray.push(letters);
-    }
 
-    changeWord();
-    setInterval(changeWord, 4000);
-</script>
+    </script>
+    <script>
+        var words = document.getElementsByClassName('word');
+        var wordArray = [];
+        var currentWord = 0;
+
+        words[currentWord].style.opacity = 1;
+        for (var i = 0; i < words.length; i++) {
+            splitLetters(words[i]);
+        }
+
+        function changeWord() {
+            var cw = wordArray[currentWord];
+            var nw = currentWord == words.length - 1 ? wordArray[0] : wordArray[currentWord + 1];
+            for (var i = 0; i < cw.length; i++) {
+                animateLetterOut(cw, i);
+            }
+
+            for (var i = 0; i < nw.length; i++) {
+                nw[i].className = 'letter behind';
+                nw[0].parentElement.style.opacity = 1;
+                animateLetterIn(nw, i);
+            }
+
+            currentWord = (currentWord == wordArray.length - 1) ? 0 : currentWord + 1;
+        }
+
+        function animateLetterOut(cw, i) {
+            setTimeout(function () {
+                cw[i].className = 'letter out';
+            }, i * 80);
+        }
+
+        function animateLetterIn(nw, i) {
+            setTimeout(function () {
+                nw[i].className = 'letter in';
+            }, 340 + (i * 80));
+        }
+
+        function splitLetters(word) {
+            var content = word.innerHTML;
+            word.innerHTML = '';
+            var letters = [];
+            for (var i = 0; i < content.length; i++) {
+                var letter = document.createElement('span');
+                letter.className = 'letter';
+                letter.innerHTML = content.charAt(i);
+                word.appendChild(letter);
+                letters.push(letter);
+            }
+            wordArray.push(letters);
+        }
+
+        changeWord();
+        setInterval(changeWord, 4000);
+    </script>
 </body>
+
 </html>
