@@ -110,7 +110,7 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 {
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 20px;
 }
 .header-text h1 span{
@@ -547,7 +547,7 @@ text{
 
 @media only screen and (max-width:600px){
     #header{
-        background-image: url("image/background.png");
+        background-image: url("responsive image.jpg ");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -555,17 +555,25 @@ text{
     }
     .header-text{
         margin-top: 80%;
-        font-size: 16px;
     }
     .header-text h1{
-        font-size: 30px;
+        font-size: 15px;
     }
-    .header-text h1 span1{
-        font-size: 20px;    
+    .intro p{
+        font-size: 18px;
+    }
+    .intro h1 span{
+        
+    }    
+    .header-text span{
+        font-size: 18px;
     }
     nav .fa-solid{
         display: block;
-        font-size: 25px;
+        font-size: 20px;
+    }
+    .icons{
+        display: none;
     }
     nav ul{
         background: black;
@@ -591,10 +599,10 @@ text{
     .icons{
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* Arrange icons in 4 columns */
-        gap: 1px; /* Add spacing between icons */
+        gap: 2px; /* Add spacing between icons */
         justify-items: start ; /* Center icons horizontally within columns */
-        margin-top: 50px; /* Add spacing between text and icons */
-        margin-right:   110%; /* Negative margin to reduce the gap on the right */
+        margin-top: 70px; /* Add spacing between text and icons */
+        margin-right:   90%; /* Negative margin to reduce the gap on the right */
         padding-right: 10px; 
         margin-left: 0px;
     }
