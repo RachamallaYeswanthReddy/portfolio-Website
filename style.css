@@ -547,7 +547,7 @@ text{
 
 @media only screen and (max-width:600px){
     #header{
-        background-image: url("responsive image.jpg ");
+        background-image: url("responsive image.png ");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
