@@ -86,7 +86,7 @@ nav ul li a:hover::after{
   
 .word {
     position: absolute;
-    width: 220px;
+    width: 240px;
     opacity: 0;
 }
 .letter {
