@@ -139,6 +139,50 @@ nav ul li a:hover::after{
     transform: scale(1.5); 
 }
 
+/* Side menu (hidden by default) */
+#sidemenu {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Initially hidden off-screen */
+    width: 300px;
+    height: 100%;
+    padding-top: 50px;
+    transition: right 0.3s ease; /* Smooth transition */
+}
+
+#sidemenu li {
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+}
+
+#sidemenu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#sidemenu i {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Hamburger icon */
+.fa-bars {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Style the links in the side menu */
+#sidemenu li a:hover {
+    color: #ff004f;
+}
+
 .icons a i {
     font-size: 30px; /* Adjust the icon size */
 }
@@ -704,3 +748,43 @@ text{
         margin-left:-1.9rem !important;
     }  
 }
+/* Media query for smaller screens (mobile devices) */
+@media screen and (max-width: 768px) {
+    nav {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    #sidemenu {
+        width: 250px; /* Reduce width of the side menu on mobile */
+        right: -250px; /* Adjust the menu to fit the new width */
+    }
+
+    #sidemenu li a {
+        font-size: 18px; /* Smaller text for mobile */
+    }
+
+    /* Ensure that the menu icon is visible on mobile */
+    .fa-bars {
+        display: block;
+    }
+
+    #sidemenu.open {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #sidemenu {
+        width: 230px; /* Further adjust for very small screens */
+    }
+
+    #sidemenu li a {
+        font-size: 16px; /* Even smaller text for small screens */
+    }
+}
+
