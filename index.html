@@ -16,10 +16,11 @@
                 <img src="image/logo.png" alt="Yesh" class="logo"  draggable="false">
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="about/index.html">About</a></li>
                     <li><a href="#main-skills">Skills</a></li>
+                    <li><a href="projects/index.html">Projects</a></li>
                     <li><a href="#certificates">Certifications</a></li>
-                    <li><a href="image/assets/YeswanthReddyRachamalla.pdf">Resume</a></li>
+                    <li><a href="image/assets/Resume Final.pdf">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-times" onclick="closemenu()"></i>
                 </ul>
@@ -30,9 +31,9 @@
             <div class="intro">
                 <p><span1>A</span1></p>
                 <p>
-                    <span class="word wisteria">ML_Engineer</span>
-                    <span class="word belize">Web_Developer </span>
-                    <span class="word pomegranate">Tech_Enthusiast </span>
+                    <span class="word wisteria">Software Engineer</span>
+                    <span class="word belize">Innovator</span>
+                    <span class="word pomegranate">Techpreneur </span>
                 </p>
                 <h1>Hi, I'm <span>Yeswanth Reddy R</span></h1>
                 <h1>A Computer Science Student</h1>
@@ -52,18 +53,21 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="image/pic-.jpg" alt="PIC" draggable="false">
+                    <img src="image/pic-2.jpeg" alt="PIC" draggable="false">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">LET ME <span>INTRODUCE</span> MYSELF</h1><br>
-                    <p class="text">Hey, This is Yeswanth Reddy , I am Pre-Final year Computer Science and Engineer 
-                        currently pursuing my BTech in Vellore institute of Technology, Chennai. Committed 
-                        and goal-oriented computer science graduate looking to pursue a career in the software 
-                        engineering domain. Possess excellent knowledge in Java(DS & Algo), C++(OOPS), Python, HTML5,CSS,MYSQL. 
-                        Ability to learn things quickly and capable of working in a fast-paced and team-driven environment.
-                        Moveover I like to travel. I believe travelling gives you a new perspective to everything. You get to
-                        know a lot about the different cultures, the cuisines, their history, the language and all the small 
-                        unique things every place has to offer.</p>
+                    <p class="text">Hi, I'm Yeswanth Reddy, a passionate computer science undergraduate at Vellore Institute of Technology, Chennai. 
+                        As a committed and goal-driven individual, I am eager to build a rewarding career in software engineering. 
+                        I bring to the table a strong foundation in Python, Java, C++ (OOP), and web development technologies like HTML, CSS, and JavaScript.
+                        My technical expertise extends to Spring Boot, Angular, and MongoDB, along with experience in machine learning algorithms, 
+                        REST API development, and real-time data synchronization. Known for my quick learning ability and adaptability, 
+                        I excel in dynamic, fast-paced, and collaborative environments.
+
+                        When I'm not immersed in coding, I enjoy traveling, which helps me gain new perspectives and discover unique cultures and experiences. 
+                        This curiosity fuels my creativity and enhances my problem-solving skills.
+                        
+                        </p>
                         
                      <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -72,14 +76,13 @@
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>Machine Learning Expertise</span><br>Skilled in diverse machine learning algorithms: regression, clustering, classification.</li>
-                            <li><span>UI/UX Designing</span><br>Experienced in UI/UX design, creating engaging digital experiences.</li>
-                            <li><span>Web Applications</span><br>Skilled in crafting functional and user-friendly web applications.</li>
+                            <li><span>Full-Stack Development</span><br>Proficient in building scalable web applications using Spring Boot, Angular, and MongoDB, ensuring seamless user experiences and efficient backend functionality.</li>
                             <li><span>Cloud Applications</span><br>Basic Understanding in Azure Cloud Platforms</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2021-Present</span><br>Under Graduate at Vellore Institute of Technology,Chennai</li>
+                            <li><span>2021-Present</span><br>UnderGraduate at Vellore Institute of Technology,Chennai</li>
                             <li><span>2019-2021</span><br>Secondary Education at Sri Chaitanya Educational Institutions,Vijayawada</li>
                             <li><span>2017-2019</span><br>Schooling at Indus Montessori School, Kurnool</li>
                         </ul>
@@ -108,7 +111,7 @@
             </div>
             <div class="col-3">
                 <div class="icon-box">
-                    <i class="ri-english-input"><span>Natural Language Processing</span></i>
+                    <i class="ri-english-input"><span>Full-Stack Development</span></i>
                 </div>
             </div>
             <div class="col-4">
@@ -413,18 +416,7 @@
     }
 </script>
 
-<script>
-    
-    var sidemenu = document.getElementById("sidemenu");
 
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-300px";
-    }
-
-</script>
 <script>
     var words = document.getElementsByClassName('word');
     var wordArray = [];
